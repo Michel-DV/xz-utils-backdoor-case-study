@@ -1,0 +1,42 @@
+name: Bootstrap CASE-002 repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".bootstrap/repo-package.zip"
+      - ".github/workflows/bootstrap.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Materialize publication package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s .bootstrap/repo-package.zip
+          unzip -o .bootstrap/repo-package.zip -d .
+          rm -rf .bootstrap
+          rm -f .github/workflows/bootstrap.yml
+
+      - name: Commit publication sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "M. D. V."
+          git config user.email "232046078+Michel-DV@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "publication: materialize CASE-002 XZ Utils repository"
+            git push origin HEAD:main
+          fi
