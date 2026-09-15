@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this case study in research, training, coursework, or internal documentation, please cite it as below."
+title: "XZ Utils Backdoor: Technical Case Study"
+type: report
+version: 1.0.0
+date-released: 2026-09-15
+authors:
+  - name: "Michel-DV"
+    alias: "@Michel-DV"
+    website: "https://github.com/Michel-DV"
+repository-code: "https://github.com/Michel-DV/xz-utils-backdoor-case-study"
+url: "https://github.com/Michel-DV/xz-utils-backdoor-case-study/blob/main/report/XZ_Utils_Backdoor_Case_Study_Michel-DV.pdf"
+license: "CC-BY-NC-ND-4.0"
+keywords:
+  - XZ Utils
+  - CVE-2024-3094
+  - liblzma
+  - OpenSSH
+  - software supply chain
+  - open source security
+  - threat research
+  - incident response
+  - MITRE ATT&CK
+  - build security
+abstract: >-
+  Technical case study of the XZ Utils backdoor (CVE-2024-3094), covering
+  maintainer trust, release-tarball manipulation, build-stage payload injection,
+  liblzma runtime hooking, the OpenSSH dependency path, ecosystem exposure,
+  detection hypotheses, remediation, and defensive lessons.
