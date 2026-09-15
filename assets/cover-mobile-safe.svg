@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" role="img" aria-label="XZ Utils Backdoor case study banner">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#07151a"/><stop offset="0.55" stop-color="#0a1113"/><stop offset="1" stop-color="#211109"/></linearGradient>
+  <radialGradient id="cyan"><stop offset="0" stop-color="#1ab4bf" stop-opacity=".28"/><stop offset="1" stop-color="#1ab4bf" stop-opacity="0"/></radialGradient>
+  <radialGradient id="orange"><stop offset="0" stop-color="#f47b32" stop-opacity=".25"/><stop offset="1" stop-color="#f47b32" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="700" fill="url(#bg)"/><circle cx="280" cy="180" r="360" fill="url(#cyan)"/><circle cx="1330" cy="220" r="390" fill="url(#orange)"/>
+<g opacity=".16" stroke="#8fd4d8"><path d="M0 100H1600M0 200H1600M0 300H1600M0 400H1600M0 500H1600M0 600H1600"/><path d="M100 0V700M300 0V700M500 0V700M700 0V700M900 0V700M1100 0V700M1300 0V700M1500 0V700"/></g>
+<text x="70" y="78" fill="#78e0e8" font-size="24" font-family="monospace" letter-spacing="5">MICHEL-DV THREAT CASE STUDIES · CASE-002</text>
+<text x="1510" y="78" text-anchor="end" fill="#b7c3c6" font-size="18" font-family="monospace" letter-spacing="4">TECHNICAL CASE STUDY</text>
+<g transform="translate(570 105)"><rect x="0" y="0" width="520" height="300" rx="28" fill="#0b181b" stroke="#62dbe4" stroke-width="3"/><rect x="28" y="28" width="464" height="244" rx="16" fill="#0b1416" stroke="#7e9da0" stroke-opacity=".25"/><text x="58" y="88" fill="#f4f8f8" font-family="Arial" font-size="38" font-weight="700">xz-5.6.1.tar.xz</text><text x="58" y="132" fill="#82cbd0" font-family="monospace" font-size="20">release artifact · signed · trusted</text><line x1="58" y1="166" x2="462" y2="166" stroke="#66878a"/><rect x="58" y="190" width="404" height="58" rx="8" fill="#101c1e"/><text x="78" y="226" fill="#ff8a3d" font-family="monospace" font-size="22">git tree != release tarball</text></g>
+<g fill="none" stroke="#48d5df" stroke-width="2" opacity=".8"><path d="M40 245 C240 90 430 110 570 230"/><path d="M40 330 C250 205 440 215 570 290"/><path d="M90 425 C290 335 450 340 570 350"/></g><g fill="#c7fbff"><circle cx="100" cy="225" r="6"/><circle cx="220" cy="330" r="6"/><circle cx="365" cy="150" r="6"/></g>
+<g fill="none" stroke="#ff853d" stroke-width="2.5" opacity=".85"><path d="M1090 220 C1240 120 1370 150 1540 250"/><path d="M1090 290 C1270 260 1410 315 1555 430"/><path d="M1090 345 C1240 440 1380 455 1535 535"/></g><g fill="#ff853d"><circle cx="1190" cy="180" r="6"/><circle cx="1320" cy="292" r="6"/><circle cx="1490" cy="230" r="6"/><circle cx="1510" cy="430" r="6"/></g>
+<text x="70" y="515" fill="#f4f7f7" font-size="60" font-weight="800" font-family="Arial">XZ UTILS</text><text x="70" y="585" fill="#ff8a3d" font-size="54" font-weight="800" font-family="Arial">BACKDOOR</text><text x="70" y="630" fill="#aec9cd" font-size="24" font-family="Arial">CVE-2024-3094 · maintainer trust · tarball mismatch · build injection · SSH pre-auth</text>
+<text x="1510" y="600" text-anchor="end" fill="#eef7f8" font-size="22" font-weight="700" font-family="Arial">@MICHEL-DV</text><text x="1510" y="632" text-anchor="end" fill="#9eb1b5" font-size="17" font-family="monospace">CC BY-NC-ND 4.0 · 2026</text>
+</svg>
