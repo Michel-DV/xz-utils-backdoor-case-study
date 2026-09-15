@@ -36,18 +36,28 @@ Integrity check: [`report/SHA256SUMS.txt`](report/SHA256SUMS.txt)
 
 ## Attack chain at a glance
 
-```mermaid
-flowchart LR
-    A[Earn contributor trust] --> B[Gain maintainer / release authority]
-    B --> C[Stage opaque test artifacts]
-    C --> D[Publish tarball-specific build logic]
-    D --> E[Extract malicious object during build]
-    E --> F[Link payload into liblzma]
-    F --> G[Distro builds trusted package]
-    G --> H[liblzma enters sshd via transitive dependency]
-    H --> I[IFUNC / loader-time symbol redirection]
-    I --> J[Special cryptographic SSH trigger]
-    J --> K[Authentication bypass / command capability]
+```text
+Contributor trust
+    ↓
+Maintainer / release authority
+    ↓
+Opaque test artifacts
+    ↓
+Tarball-specific build logic
+    ↓
+Build-time malicious object extraction
+    ↓
+Payload linked into liblzma
+    ↓
+Trusted distro package build
+    ↓
+Transitive load into sshd
+    ↓
+IFUNC / loader-time symbol redirection
+    ↓
+Operator-only cryptographic SSH trigger
+    ↓
+Pre-authentication bypass / command capability
 ```
 
 ## Key findings
